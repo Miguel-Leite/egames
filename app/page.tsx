@@ -4,13 +4,25 @@ import { MessagesSquare, Share2, UserRound, Users } from "lucide-react";
 
 import Logo from "@/app/assets/eg-positivo.png";
 import Mockups from "@/app/assets/mockups.png";
-import Img01 from "@/app/assets/img01.png"
-import Img02 from "@/app/assets/img02.png"
+import Img01 from "@/app/assets/img01.png";
+import Img02 from "@/app/assets/img02.png";
 
-import FacebookGaming from "@/app/assets/icons/facebook gaming.svg"
-import Twitch from "@/app/assets/icons/twitch.svg"
-import Youtube from "@/app/assets/icons/youTube.svg"
-import Discord from "@/app/assets/icons/discord.svg"
+import FacebookGaming from "@/app/assets/icons/facebook gaming.svg";
+import Twitch from "@/app/assets/icons/twitch.svg";
+import Youtube from "@/app/assets/icons/youTube.svg";
+import Discord from "@/app/assets/icons/discord.svg";
+
+import Game01 from "@/app/assets/games/game01.png";
+import Game02 from "@/app/assets/games/game02.png";
+import Game03 from "@/app/assets/games/game03.png";
+import Game04 from "@/app/assets/games/game04.png";
+import Game05 from "@/app/assets/games/game05.png";
+import Game06 from "@/app/assets/games/game06.png";
+import Game07 from "@/app/assets/games/game07.png";
+import Game08 from "@/app/assets/games/game08.png";
+import Game09 from "@/app/assets/games/game09.png";
+import Game10 from "@/app/assets/games/game10.png";
+import Symbol from "@/app/assets/symbol.png";
 
 
 export default function Home() {
@@ -106,6 +118,68 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <section className="relative overflow-hidden py-36 px-32">
+        <div className="container z-50">
+          <div className="grid grid-cols-4 gap-4">
+            <div className="rounded-xl py-12 bg-zinc-800 text-zinc-400 flex flex-col items-center justify-center p-4 gap-6">
+              <Image src={Game01} alt="Game 01" />
+              <p>38 mil eGamers fãs</p>
+            </div>
+            <div className="rounded-xl py-12 bg-zinc-800 text-zinc-400 flex flex-col items-center justify-center p-4 gap-6">
+              <Image src={Game02} alt="Game 02" />
+              <p>42 mil eGamers fãs</p>
+            </div>
+            <div className={`rounded-xl py-12 bg-[url(/cover-fifa.png)] bg-no-repeat bg-cover relative text-zinc-400 p-4`}>
+              <div className="absolute left-0 top-0 w-full h-full bg-zinc-900/85 flex flex-col items-center justify-center">
+                <Image src={Game03} alt="Game 03" />
+                <p>87 mil eGamers fãs</p>
+              </div>
+            </div>
+            <div className="row-span-2 relative rounded-xl py-12 bg-zinc-800 text-zinc-400 flex flex-col items-center justify-center p-4 gap-6">
+              <Image src={Game04} alt="Game 04" className="absolute bottom-0 right-0 w-88" />
+              <div className="absolute rounded-b-xl overflow-hidden left-0 top-0 w-full h-full bg-linear-to-b from-zinc-900/15 to-zinc-900 p-5 flex items-end justify-center">
+                <div className="flex flex-col items-center justify-center gap-6">
+                  <Image src={Game09} alt="Game 09" />
+                  <p>95 mil eGamers fãs</p>
+                </div>
+              </div>
+            </div>
+            <div className="row-span-2 relative rounded-xl py-12 bg-zinc-800 text-zinc-400 flex flex-col items-center justify-center p-4 gap-6">
+              <Image src={Game05} alt="Game 05" className="absolute bottom-0 right-0" />
+              <div className="absolute rounded-b-xl overflow-hidden left-0 top-0 w-full h-full bg-linear-to-b from-zinc-900/15 to-zinc-900 p-5 flex items-end justify-center">
+                <div className="flex flex-col items-center justify-center gap-6">
+                  <Image src={Game10} alt="Game 10" />
+                  <p>22 mil eGamers fãs</p>
+                </div>
+              </div>
+            </div>
+            <div className="rounded-xl py-12 bg-zinc-800 text-zinc-400 flex flex-col items-center justify-center p-4 gap-6">
+              <Image src={Game06} alt="Game 06" />
+              <p>180 mil eGamers fãs</p>
+            </div>
+            <div className="row-span-2 relative rounded-xl py-12 bg-linear-to-t from-indigo-500 via-purple-500 to-pink-500">
+              <div className="absolute left-0 top-0 w-full h-full py-12 px-12 flex flex-col justify-center items-center text-center gap-3.5">
+                <Image src={Symbol} alt="Symbol" />
+                <p className="text-2xl font-bold text-white">Na comunidade eGames todo jogo tem seu espaço. Encontre a sua tribo!</p>
+                <Link href="#" className="bg-white/20 py-3 px-10 rounded-md text-white font-semibold">Cadastrar agora</Link>
+              </div>
+            </div>
+            <div className={`rounded-xl py-12 bg-[url(/cover-cs-go.png)] bg-no-repeat bg-cover relative text-zinc-400 p-4`}>
+              <div className="absolute left-0 top-0 w-full h-full bg-zinc-900/85 flex flex-col items-center justify-center">
+                <Image src={Game07} alt="Game 07" />
+                <p>125 mil eGamers fãs</p>
+              </div>
+            </div>
+            <div className="rounded-xl py-12 bg-zinc-800 text-zinc-400 flex flex-col items-center justify-center p-4 gap-6">
+              <Image src={Game08} alt="Game 08" />
+              <p>80 mil eGamers fãs</p>
+            </div>
+          </div>
+        </div>
+        <div className="absolute -bottom-183.5 -left-9.25 w-179.5 h-179.5 -z-10 rounded-full bg-purple-600 blur-[632px] opacity-50" />
+        <div className="absolute -bottom-60 -left-185 w-179.5 h-179.5 -z-10 rounded-full bg-pink-600 blur-[632px] opacity-50" />
+      </section>
     </div>
   );
 }
