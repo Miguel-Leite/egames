@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { MessagesSquare, Share2, UserRound, Users } from "lucide-react";
+import { Facebook, Instagram, Linkedin, MessagesSquare, Share2, Twitter, UserRound, Users } from "lucide-react";
 
 import Logo from "@/app/assets/eg-positivo.png";
 import Mockups from "@/app/assets/mockups.png";
@@ -27,7 +27,7 @@ import Symbol from "@/app/assets/symbol.png";
 
 export default function Home() {
   return (
-    <div>
+    <div className="overflow-hidden">
       <section className="relative overflow-hidden">
         <div className="container">
           <nav className="flex items-center justify-between py-12">
@@ -180,6 +180,39 @@ export default function Home() {
         <div className="absolute -bottom-183.5 -left-9.25 w-179.5 h-179.5 -z-10 rounded-full bg-purple-600 blur-[632px] opacity-50" />
         <div className="absolute -bottom-60 -left-185 w-179.5 h-179.5 -z-10 rounded-full bg-pink-600 blur-[632px] opacity-50" />
       </section>
+
+      <footer className="w-full bg-black py-12">
+        <div className="container">
+          <div className="grid grid-cols-2 gap-3">
+            <div>
+              <div className="space-y-7">
+                <ul className="font-medium flex flex-col gap-3">
+                  <li><Link href="#">Quem somos</Link></li>
+                  <li><Link href="#">Perguntas frequentes</Link></li>
+                  <li><Link href="#">Assessoria de Imprensa</Link></li>
+                  <li><Link href="#">Carreira</Link> <div className="inline-block bg-gradient-primary text-[10px] py-0.5 px-2.5 rounded-full font-medium text-white">temos vagas</div></li>
+                  <li><Link href="#">Blog</Link></li>
+                  <li><Link href="#">Contato</Link></li>
+                </ul>
+                <div className="flex items-center gap-3.5">
+                  <div className="inline-flex p-2.5 bg-zinc-900 text-white rounded-full">
+                    <Instagram />
+                  </div>
+                  <div className="inline-flex p-2.5 bg-zinc-900 text-white rounded-full">
+                    <Twitter />
+                  </div>
+                  <div className="inline-flex p-2.5 bg-zinc-900 text-white rounded-full">
+                    <Linkedin />
+                  </div>
+                  <div className="inline-flex p-2.5 bg-zinc-900 text-white rounded-full">
+                    <Facebook />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
